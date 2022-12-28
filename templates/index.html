@@ -1,0 +1,50 @@
+<html>
+
+<head>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+</head>
+
+<body>
+    <section class="get-in-touch">
+        <h1 class="title">Onset Diabetes Predictor</h1>
+        <form class="contact-form row" action="{{ url_for('predict')}}" method="post">
+            <div class="form-field col-lg-6">
+                <input id="Pregnancies" class="input-text js-input" type="text" name="Pregnancies" required>
+                <label class="label" for="Pregnancies">Pregnancies</label>
+            </div>
+            <div class="form-field col-lg-6 ">
+                <input id="Glucose" class="input-text js-input" type="text" name="Glucose" required>
+                <label class="label" for="Glucose">Glucose</label>
+            </div>
+            <div class="form-field col-lg-6 ">
+                <input id="SkinThickness" class="input-text js-input" type="text" name="SkinThickness" required>
+                <label class="label" for="SkinThickness">SkinThickness</label>
+            </div>
+            <div class="form-field col-lg-6 ">
+                <input id="Insulin" class="input-text js-input" type="text" name="Insulin" required>
+                <label class="label" for="Insulin">Insulin</label>
+            </div>
+            <div class="form-field col-lg-6 ">
+                <input id="BMI" class="input-text js-input" type="text" name="BMI" required>
+                <label class="label" for="BMI">BMI</label>
+            </div>
+            <div class="form-field col-lg-6 ">
+                <input id="Age" class="input-text js-input" type="text" name="Age" required>
+                <label class="label" for="Age">Age</label>
+            </div>
+            <div class="form-field col-lg-12">
+                <input class="submit-btn" type="submit" value="Submit">
+            </div>
+        </form>
+
+        <center><h1 style="font-size: 35px; padding-top:0px;padding:10px; margin-top:0px;color:#5543ca;">{{prediction_text}}</h1></center>
+    </section>
+
+    
+
+</body>
+
+</html>
