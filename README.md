@@ -4,9 +4,9 @@ This repository contains the code for an Onset Diabetes Predictor application, w
 
 ## Website
 
-The SummifyNow website is hosted at: (https://diabetesprediction-o8l6.onrender.com)
+The Onset Diabetes Predictor website is hosted at: (https://diabetesprediction-o8l6.onrender.com)
 
-![Talk2PDF Screenshot](./static/Screenshot_1.jpg)
+![Onset Diabetes Predictor Screenshot](./static/Screenshot_1.jpg)
 
 ## Technologies Used
 
